@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const Player = ({ name, symbol, isActive, onNameChange }) => {
-  const [editedName, setEditedName] = useState(name);
+const Player = ({ initialName, symbol, isActive, onNameChange }) => {
+  const [editedName, setEditedName] = useState(initialName);
   const [isEditing, setIsEditing] = useState(false);
 
   function handleEditClick() {
